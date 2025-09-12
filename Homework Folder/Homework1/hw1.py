@@ -197,7 +197,7 @@ def blur_image(img: np.ndarray, ksize: int) -> np.ndarray:
     :return: Image array with blurred image
     """
     medBlurimg = img.copy()
-    #standered blur with k size very simple
+    #standered blur with k size very simple from cv
     medBlurimg = cv2.medianBlur(medBlurimg, ksize, 0)
 
     return np.copy(medBlurimg)
