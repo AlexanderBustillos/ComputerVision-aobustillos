@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 
+#Function to warp
 def warp_image(input_path, output_path, src_pts, out_size):
 
     img = cv2.imread(input_path)
@@ -40,7 +41,7 @@ image4 = cv2.imread("images/program_sheet_warped.jpg")
 cv2.imshow("Program sheet warped", image4)
 while True:
     k = cv2.waitKey(1)
-    if k == 27:  # ESC
+    if k == 27:
         break
 
 cv2.destroyAllWindows()
